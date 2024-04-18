@@ -45,7 +45,7 @@
 
             var featureLayer = new FeatureLayer({
                 url: "https://services1.arcgis.com/qr14biwnHA6Vis6l/arcgis/rest/services/Sports_Fields_On_Campus/FeatureServer",
-                popupTemplate: { // Define the popup content and actions here
+                popupTemplate: { 
                     title: "Map of sports fields at A&M",
                     content: [{
                         type: "fields",
@@ -53,14 +53,14 @@
                             fieldName: "Name"
                         }, ]
                     }],
-                    actions: [{ // Define custom actions if necessary
+                    actions: [{ 
                         id: "find-more-info",
                         title: "More Info"
                     }]
                 }
             });
 
-            map.add(featureLayer); // Add the feature layer to the map
+            map.add(featureLayer); 
            
         });
     </script>
